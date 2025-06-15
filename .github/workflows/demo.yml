@@ -1,0 +1,8 @@
+name: Hello World Action   # 工作流名称
+on: [push]                 # 触发条件：代码推送时自动运行
+jobs:
+  say-hello:                # 任务名称
+    runs-on: ubuntu-latest  # 运行环境：最新版Ubuntu
+    steps:
+      - name: Print Message
+        run: echo "🎉 恭喜！你的第一个 Action 已运行！"
